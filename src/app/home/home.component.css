@@ -1,0 +1,23 @@
+.card-format {
+    margin: 16px auto;
+    width: 90%;
+}
+
+.div-logo {
+    display: flex;
+}
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.title-p {
+    font-size: 25px;
+    font-weight: 600;
+    color: coral;
+    text-transform: uppercase;
+    margin: 0 25px;
+}

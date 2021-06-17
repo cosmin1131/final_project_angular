@@ -1,0 +1,17 @@
+
+.input-item {
+    margin-bottom: 6px;
+}
+
+.card-container {
+    margin: auto;
+    width: 90%;
+
+    display: table;
+    margin-top: 30px;
+}
+
+.card-form {
+    display: grid;
+
+}

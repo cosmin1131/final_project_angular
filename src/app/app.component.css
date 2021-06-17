@@ -1,0 +1,18 @@
+.example-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .div-logo-menu{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 15px;
+  }
+
+  .img-logo {
+      margin: auto;
+      height: 60px;
+  }

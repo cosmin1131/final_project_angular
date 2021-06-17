@@ -1,0 +1,15 @@
+.card-format {
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+}
+
+.title-category {
+    font-size: large;
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.sub-category {
+    display: block;
+}

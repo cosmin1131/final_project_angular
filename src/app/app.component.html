@@ -1,0 +1,25 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened" (opened)="events.push('open!')"
+        (closed)="events.push('close!')">
+        <div class="div-logo-menu"><img class="img-logo" src="https://www.mbejda.com/content/images/2017/08/AngularJS-Shield.svg" /></div>
+        <mat-nav-list>
+            <div *ngFor="let option of menuOptions">
+                <mat-list-item *ngIf="true" (click)="showInfo(option, sidenav)">
+                    <mat-icon mat-list-icon>{{option.icon}}</mat-icon>
+                <a matLine>{{ option.title }}</a>
+            </mat-list-item>
+            </div>
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <mat-icon aria-hidden="false" aria-label="Example home icon" (click)="sidenav.toggle()">menu</mat-icon>
+                <span style="margin-left: 16px;">{{username}}</span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div class="mat-app-background" style="height:100%;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>

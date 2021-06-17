@@ -1,0 +1,27 @@
+.lbl-name {
+    font-size: 40px;
+    color: red;
+    margin: auto;
+    text-align: center;
+}
+
+.lbl-auth-type {
+    text-align: center;
+    font-size: 10px;
+}
+
+.lbl-auth-type:hover {
+    color: red;
+}
+
+
+.div-logo {
+    display: flex;
+}
+
+.img-logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-top: 100px;
+}

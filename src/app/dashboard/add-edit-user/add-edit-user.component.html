@@ -1,0 +1,32 @@
+<mat-card class="card-container">
+  <div>
+
+    <form [formGroup]="userForm" class="card-form">
+        <mat-form-field>
+            <mat-label>First name</mat-label>
+            <input placeholder="First name" matInput type="text" formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last name</mat-label>
+            <input placeholder="Last name" matInput type="text" formControlName="lastName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input placeholder="Email" matInput type="email" formControlName="email">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input placeholder="Password" matInput type="password" formControlName="password">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Retype Password</mat-label>
+            <input placeholder="Password" matInput type="password" formControlName="retypePassword">
+          </mat-form-field>
+
+
+        <button [disabled]="!userForm.valid" (click)="onSubmit()" mat-raised-button color="primary">Submit</button>  
+        <button mat-raised-button (click)="onDeleteUser()" color="primary">Delete</button> 
+    </form>
+</div>
+
+</mat-card>

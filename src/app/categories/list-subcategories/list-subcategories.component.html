@@ -1,0 +1,7 @@
+
+<div class="container">
+    <div *ngFor="let subCategory of subCategoriesList" (click)="onSelectSubCategory(subCategory)">
+      <app-subcategory-preview class="sub-category" 
+      [subCategory]="subCategory"></app-subcategory-preview>
+    </div>
+  </div>

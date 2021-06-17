@@ -1,0 +1,38 @@
+.card-format {
+    margin: 16px;
+    padding: 16px;
+    display: flex;
+    width: 300px;
+    height: 150px;
+}
+
+.icon-item {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    margin-right: 16px;
+}
+
+.title-item {
+    font-size: large;
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.description-item {
+    font-size: medium;
+    text-transform: capitalize;
+    text-overflow: clip;
+}
+
+.price-item {
+    text-align: right;
+    font-size: x-large;
+    position: absolute;
+    bottom: 0;
+    right: 16px;
+}
+
+.item {
+    display: block;
+}

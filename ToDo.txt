@@ -1,0 +1,60 @@
+-Auth  --> OK
+-Menu  --> OK
+    -Home  --> OK 
+    -Categories  --> OK
+    -Orders  --> OK
+    -My Account  --> OK
+    -Admin(Admins Only)  --> 
+    -Logout  --> OK
+-HomePage 
+    -Lista categorii  --> Ok
+    -Lista de produse  --> Ok
+-Category pages / Dupa selectarea categoriei din Home pe aceasta pagina se vor lista toate elementele din acea categorie cu posibilitatea de filtrare dupa subcategorii) --> Ok
+    -Cats
+        -Food
+        -Toys
+        -Accesories
+    -Dogs
+        -Food
+        -Toys
+        -Accesories
+    -Fish
+        -Food
+        -Toys
+        -Accesories
+    -Birds
+        -Food
+        -Toys
+        -Accesories
+-Product details 
+    -Images --> Ok
+    -Title  --> OK
+    -Description  --> OK
+    -Price  --> OK
+    -Category --> OK
+    -Subcategory --> OK
+    -UserId(Administrator)  --> OK
+    -Date  --> OK
+-Order
+    -User details
+    -Product
+    -Quantity
+    -Price
+    -Date
+-My Account
+    -First Name
+    -Last Name
+    -Address
+    -Phone Number
+    -Email
+    -Profile picture(optional)
+    -Change Password
+    -Order List
+-Admin Page
+    -User Management(CRUD Users)
+    -Products Management(CRUD Products)
+    -CRUD for Categories and Subcategories
+
+ToDo Java Spring:
+    -Create, read User
+    -security token

@@ -1,0 +1,31 @@
+.icon-item {
+    width: 100px;
+    margin: 16px
+}
+
+.text-container {
+    display: flex;
+}
+
+.title-p {
+    color: coral;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description-p {
+    color:cornsilk;
+    font-size: 14px;
+}
+
+.price-p {
+    color: coral;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+
+.detail-button {
+    margin-right: 5px;
+}

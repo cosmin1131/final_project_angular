@@ -1,0 +1,41 @@
+<div>
+    <div>
+        <!-- cu ajutorul lui addEvent primim evenimentul din componenta -->
+        <!-- $event reprezinta continutul trimis prin metoda .emit din componenta app-edit-item -->
+        <app-add-edit-products [selectedItem]="selectedItem" [categoryList]="categories" [subCategoryList]="subcategories"
+            (addEvent)="onReceiveItem($event)" (editEvent)="onEditItem($event)" (deleteEvent)="onDeleteItem($event)">
+        </app-add-edit-products>
+        <!-- itemsList este atribut pentru componenta listItems, 
+        a devenit atribut pentru ca in fata variabilei itemsList
+        din componenta am adaugat @Input() -->
+        <app-list-products [itemsList]="items" (selectItemEvent)="onSelectedItemFromList($event)"></app-list-products>
+    </div>
+</div>
+
+<div>
+    <div>
+        <app-add-edit-categories [selectedCategory]="selectedCategory" (addEvent)="onReceiveCategory($event)"
+            (editEvent)="onEditCategory($event)" (deleteEvent)="onDeleteCategory($event)"></app-add-edit-categories>
+
+        <app-list-categories [categoriesList]="categories" (selectCategoryEvent)="onSelectedCategoryFromList($event)">
+        </app-list-categories>
+    </div>
+
+    <div>
+        <app-add-edit-sub-categories [selectedSubCategory]="selectedCategory" (addEvent)="onReceiveSubCategory($event)"
+            (editEvent)="onEditSubCategory($event)" (deleteEvent)="onDeleteSubCategory($event)">
+        </app-add-edit-sub-categories>
+
+        <app-list-subcategories [subCategoriesList]="subcategories"
+            (selectCategoryEvent)="onSelectedSubCategoryFromList($event)">
+        </app-list-subcategories>
+    </div>
+</div>
+
+<div>
+    <app-add-edit-user [selectedUser]="selectedUser" (addEvent)="onReceiveUser($event)" (editEvent)="onEditUser($event)" (deleteEvent)= "onDeleteUser($event)">
+        
+    </app-add-edit-user>
+
+    <app-list-users [usersList]="users" (selectUserEvent)="onSelectedUserFromList($event)"></app-list-users>
+</div>

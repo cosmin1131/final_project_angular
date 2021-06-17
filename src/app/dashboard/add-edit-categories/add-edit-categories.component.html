@@ -1,0 +1,16 @@
+<div style="display: flex">
+    <mat-card class="card-container">
+        <mat-card-title class="card-title">Add/Edit/Delete Categoies</mat-card-title>
+        <form [formGroup]="formData" class="card-form">
+            <mat-form-field appearance="standard">
+                <mat-label>Title</mat-label>
+                <input placeholder="Title" matInput type="text" formControlName="title">
+            </mat-form-field>
+
+            <button [disabled]="!formData.valid" (click)="onSubmit()" mat-raised-button color="primary">Submit</button>
+            <button [disabled]="selectedCategory==null" (click)="onDelete()" mat-raised-button
+                color="primary">Delete</button>
+        </form>
+    </mat-card>
+
+</div>

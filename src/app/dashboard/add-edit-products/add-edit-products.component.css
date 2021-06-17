@@ -1,0 +1,16 @@
+.card-container {
+    margin: auto;
+    width: 90%;
+
+    display: table;
+    margin-top: 30px;
+}
+
+.card-form {
+    display: grid;
+
+}
+
+.card-title {
+    font-size: medium;
+}

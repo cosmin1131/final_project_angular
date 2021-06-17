@@ -1,0 +1,16 @@
+.container {
+    margin: 16px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.title-category {
+    font-size: large;
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.sub-category {
+    display: block;
+}

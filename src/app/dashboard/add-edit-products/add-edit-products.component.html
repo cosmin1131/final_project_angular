@@ -1,0 +1,44 @@
+<div style="display: flex">
+    <mat-card class="card-container">
+        <mat-card-title class="card-title">Add/Edit/Delete item</mat-card-title>
+        <form [formGroup]="formData" class="card-form">
+            <mat-form-field appearance="standard">
+                <mat-label>Title</mat-label>
+                <input placeholder="Title" matInput type="text" formControlName="title">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>Description</mat-label>
+                <input placeholder="Description" matInput type="text" formControlName="description">
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+                <mat-label>Image Url</mat-label>
+                <input placeholder="ImageUrl" matInput type="text" formControlName="imageUrl">
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Category</mat-label>
+                <mat-select formControlName="categoryId">
+                    <mat-option *ngFor="let category of categoryList" [value]="category.id">{{category.title}}
+                    </mat-option>
+
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="fill">
+                <mat-label>Select Sub Category</mat-label>
+                <mat-select formControlName="subCategoryId">
+                    <mat-option *ngFor="let subCategory of subCategoryList" [value]="subCategory.id">{{subCategory.title}}
+                    </mat-option>
+
+                </mat-select>
+            </mat-form-field>
+            <mat-form-field appearance="standard">
+
+                <mat-label>Price</mat-label>
+                <input placeholder="Price" matInput type="number" formControlName="price">
+            </mat-form-field>
+
+            <button [disabled]="!formData.valid" (click)="onSubmit()" mat-raised-button color="primary">Submit</button>
+            <button [disabled]="selectedItem==null" (click)="onDelete()" mat-raised-button
+                color="primary">Delete</button>
+        </form>
+    </mat-card>
+</div>

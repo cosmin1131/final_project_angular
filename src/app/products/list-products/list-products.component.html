@@ -1,0 +1,6 @@
+<div class="container">
+    <div *ngFor="let item of itemsList" (click)="onSelectItem(item)">
+        <app-product-preview class="item" 
+        [item]="item"></app-product-preview> 
+    </div>
+</div>

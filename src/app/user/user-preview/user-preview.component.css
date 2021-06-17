@@ -1,0 +1,14 @@
+.card-format {
+    margin: 16px;
+    width: 100%;
+}
+
+.username {
+    font-size: large;
+    color: tomato;
+    text-transform: capitalize;
+}
+
+.category {
+    display: block;
+}

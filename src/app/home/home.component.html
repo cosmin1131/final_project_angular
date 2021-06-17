@@ -1,0 +1,17 @@
+<div>
+    <div class="div-logo"><img class="img-logo" src="https://www.mbejda.com/content/images/2017/08/AngularJS-Shield.svg" /></div>
+
+    <mat-card class="card-format">
+        <div>
+            <p>
+                {{description}}
+            </p>
+        </div>
+    </mat-card>
+    <p class="title-p">Products</p>
+    <app-list-products [itemsList]="products" (selectItemEvent)="onSelectProduct($event)"></app-list-products>
+    <p class="title-p">Categories</p>
+    <app-list-categories [categoriesList]="categories"></app-list-categories>
+    <p class="title-p">Sub-categories</p>
+    <app-list-subcategories [subCategoriesList]="subcategories"></app-list-subcategories>
+</div>

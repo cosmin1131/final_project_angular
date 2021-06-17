@@ -1,0 +1,31 @@
+<div>
+    <div class="div-logo">
+        <img class="icon-item" [src]="data.product?.imageUrl">
+    </div>
+    <div *ngIf="true">
+        <div class="text-container title-p">
+            <p>Title: {{data.product?.title}}</p>
+        </div>
+        <div class="text-container description-p">
+            <p>Description: {{data.product?.description}}</p>
+        </div>
+        <div class="text-container">
+            <p>Categories: {{data.product?.category.title}}</p>
+        </div>
+        <div class="text-container">
+            <p>Subcategories: {{data.product?.subCategory.title}}</p>
+        </div>
+        <div class="text-container">
+            <p>Date: {{data.product?.title}}</p>
+        </div>
+
+        <button class="detail-button" (click)="onAddItemToOrder()" mat-raised-button color="primary">Buy</button>
+        <button class="detail-button" (click)="onCloseDialog()" mat-raised-button color="primary">Close</button>
+
+        <div class="text-container price-p">
+            <p>Price: {{data.product?.price}} Lei</p>
+        </div>
+    </div>
+    
+    
+</div>

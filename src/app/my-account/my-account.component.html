@@ -1,0 +1,28 @@
+<div class="div-container">
+  <div class="div-logo"><img class="img-logo" src="https://www.mbejda.com/content/images/2017/08/AngularJS-Shield.svg" /></div>
+    <form [formGroup]="myAccountForm" class="form-container">
+        <mat-form-field>
+            <mat-label>First name</mat-label>
+            <input placeholder="First name" matInput type="text" formControlName="firstName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Last name</mat-label>
+            <input placeholder="Last name" matInput type="text" formControlName="lastName">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input placeholder="Email" matInput type="email" formControlName="email">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input placeholder="Password" matInput type="password" formControlName="password">
+          </mat-form-field>
+          <mat-form-field>
+            <mat-label>Retype Password</mat-label>
+            <input placeholder="Password" matInput type="password" formControlName="retypePassword">
+          </mat-form-field>
+
+
+        <button [disabled]="!myAccountForm.valid" (click)="onSubmit()" mat-raised-button color="primary">Submit</button>   
+    </form>
+</div>
