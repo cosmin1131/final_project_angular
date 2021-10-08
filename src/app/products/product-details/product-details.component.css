@@ -8,7 +8,7 @@
 }
 
 .title-p {
-    color: coral;
+    color: grey;
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
@@ -20,7 +20,7 @@
 }
 
 .price-p {
-    color: coral;
+    color: grey;
     font-size: 20px;
     font-weight: bold;
     float: right;
